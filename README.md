@@ -28,8 +28,6 @@ int main() {
         
         if(j==n-1){//estoy en el ultimo
             
-                int act;
-                act = num;
                // while(num<10){ si quiero que sea while en lugar de recursivo en la ultima altura
     
                     int x;
@@ -52,11 +50,11 @@ int main() {
   
                 j=j+1;
                 num=num+1;
-                if(rec(n,j,num,pn)==1){
+                if(rec(n,j,num,pn)==1){ //aqui es que ya a terminado en 9, cambio los numeros y vuelvo a entrar
                     //printf("piso%d valor%d ",j,pn[j]);
                     j=j-1; //corrijo mi posicion de altura ya que con el anterior ++ estaba al final
-                    pn[j] = pn[j]+1;
-                    num = pn[j];
+                    pn[j] = pn[j]+1; //incremento esta altula +1
+                    num = pn[j]; //trapaso el nuevo numero mínimo por el que empieza el bucle hasta 9
                     //printf("p%d v%d ",j,pn[j]);
                     rec(n,j,num,pn);
                     
@@ -66,7 +64,7 @@ int main() {
             //printf(" - ");
         }
         
-        return 1;
+        return 1; //este nivel a acabado y sube al anterior
     }
     
     rec(n,j,0,numero);
