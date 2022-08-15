@@ -41,7 +41,7 @@ int main() {
                     pn[j] = num;
                 //} return 1
                 
-                if(num>9)  return 1; //esta y la de abajo para el bucle recursivo
+                if(num>9)  return 1; //esta linea y la de abajo para el bucle recursivo
                 rec(n,j,num,pn);
 
         } else {
