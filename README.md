@@ -1,5 +1,4 @@
 ```c
-
 // Online C compiler to run C program online
 #include <stdio.h>
 
@@ -49,9 +48,6 @@ int main() {
 
         } else {
 
-        
-        //if(j<n-1){
-             //rec(n,j,num,pn);
             if(pn[j]<9){
   
                 j=j+1;
@@ -64,9 +60,6 @@ int main() {
                     //printf("p%d v%d ",j,pn[j]);
                     rec(n,j,num,pn);
                     
-                    //num=num+1;
-                    //return 1;
-                    
                 }
 
                }
@@ -76,11 +69,9 @@ int main() {
         return 1;
     }
     
-    
     rec(n,j,0,numero);
     
     
-
     return 0;
 }
 
